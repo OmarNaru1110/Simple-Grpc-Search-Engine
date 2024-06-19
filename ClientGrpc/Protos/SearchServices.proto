@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServerGrpc.Protos";
+import "google/protobuf/empty.proto";
+import "Protos/Models.proto";
+
+service SearchEngine{
+	rpc Search(stream SearchQuery) returns (google.protobuf.Empty);
+}

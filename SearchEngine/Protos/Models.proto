@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServerGrpc.Protos";
+
+message SearchQuery{
+	string query = 1;
+	bool isEnterPressed = 2;
+}
